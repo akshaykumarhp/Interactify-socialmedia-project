@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { TbSocial } from "react-icons/tb";
+import { BsShare } from "react-icons/bs";
 import { Loading, TextInput } from '../components';
+import { ImConnection } from "react-icons/im";
+import { AiOutlineInteraction } from "react-icons/ai";
 import CustomButton from '../components/CustomButton';
 import { useState } from 'react';
 import { BgImage } from '../assets';
@@ -17,14 +20,13 @@ const Login = () => {
     mode: "onChange",
   });
 
+  const onSubmit = async(data) => {
+
+  }
+
   const [errMsg, setErrMsg] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const dispatch = useDispatch();
-
-  const onSubmit = data => {
-    // Handle form submission
-    console.log(data);
-  };
 
   return (
     <div className='bg-bgColor w-full h-[100vh] flex items-center justify-center p-6'>
@@ -100,7 +102,32 @@ const Login = () => {
               <img
                 src={BgImage}
                 alt='Bg Image'
-                className='w-48 2xl:w-64 h-48 2xl:h-64 rounded-full object-cover'/>
+                className='w-48 2xl:w-64 h-48 2xl:h-64 rounded-full object-cover mb-8'
+              />
+
+              <div className='absolute flex items-center gap-1 bg-white right-10 top-15 py-2 px-5 rounded-full'>
+                <BsShare size={14} />
+                <span className='text-xs font-medium'>Share</span>
+              </div>
+
+              <div className='absolute flex items-center gap-1 bg-white left-10 top-6 py-2 px-5 rounded-full'>
+                <ImConnection />
+                <span className='text-xs font-medium'>Connect</span>
+              </div>
+
+              <div className='absolute flex items-center gap-1 bg-white left-12 bottom-6 py-2 px-5 rounded-full'>
+                <AiOutlineInteraction />
+                <span className='text-xs font-medium'>Interact</span>
+              </div>
+          </div>
+
+          <div className='mt16 text-center'>
+            <p className='text-white text-base'>
+              Connect with friends and interact!
+            </p>
+            <span className='text-sm text-white/80'>
+              Share your thoughts with everyone around the world!
+            </span>
           </div>
         </div>
       </div>
