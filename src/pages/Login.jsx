@@ -39,6 +39,18 @@ const Login = () => {
             labelStyle='ml-2'
             error= {errors.email ? errors.email.message : ""}
             />
+            <TextInput
+            name='password' 
+            placeholder="Password"
+            label='Password'
+            type='password'
+            register={register("password", {
+              required: "Password is required",
+            })}
+            styles='w-full rounded-full'
+            labelStyle='ml-2'
+            error= {errors.password ? errors.password.message : ""}
+            />
           </form>
         </div>
         {/* RIGHT */}
