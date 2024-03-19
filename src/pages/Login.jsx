@@ -25,7 +25,7 @@ const Login = () => {
             </span>
           </div>
           <p className="text-ascent-1 text-base font-semibold"> Login to your account</p>
-          <span className='text-sm mt-2 text-ascent-2'>Welcome back!</span>
+          <span className='text-sm mt-2 text-ascent-2'>Welcome!</span>
           <form action="py-8 flex flex-col gap-5">
             <TextInput
             name='email' 
