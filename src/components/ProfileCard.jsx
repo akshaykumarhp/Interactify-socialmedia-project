@@ -12,7 +12,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { NoProfile } from "../assets";
 import { useDispatch, useSelector } from "react-redux";
-import { UpdateProfile } from "../redux/userSlice";
+import { updateProfile } from "../redux/userSlice";
 import { sendFriendRequest } from "../utils";
 
 const ProfileCard = ({ user }) => {
@@ -43,7 +43,7 @@ const ProfileCard = ({ user }) => {
               <LiaEditSolid
                 size={22}
                 className='text-blue cursor-pointer'
-                onClick={() => dispatch(UpdateProfile(true))}
+                onClick={() => dispatch(updateProfile(true))}
               />
             ) : (
               <button
