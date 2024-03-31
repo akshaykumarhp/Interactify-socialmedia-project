@@ -65,22 +65,6 @@ export const user = {
     "64df39704180b81adfe41d0b",
     "64df39704180b81adfe41d0b",
     "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
-    "64df39704180b81adfe41d0b",
   ],
   verified: true,
   createdAt: "2023-08-18T09:38:14.179Z",
@@ -115,35 +99,6 @@ export const friends = [
   },
 ];
 
-export const requests = [
-  {
-    _id: "64df3aec4180b81adfe41d32",
-    requestFrom: friends[0],
-  },
-  {
-    _id: "64df39704180b81adfe41d0b",
-    requestFrom: friends[1],
-  },
-  {
-    _id: "64df424b4a4c0d47b5369f65",
-    requestFrom: friends[2],
-  },
-];
-
-export const suggest = [
-  {
-    _id: "64df3aec4180b81adfe41d32",
-    ...friends[0],
-  },
-  {
-    _id: "64df39704180b81adfe41d0b",
-    ...friends[1],
-  },
-  {
-    _id: "64df424b4a4c0d47b5369f65",
-    ...friends[2],
-  },
-];
 export const posts = [
   {
     _id: "64e2fe620d7868ecff1a6a86",
@@ -158,7 +113,7 @@ export const posts = [
     description: "Hello everyone, this is a new video. check it out. thank you",
     image:
       "https://res.cloudinary.com/djs3wu5bg/image/upload/v1692597858/SOCIALMEDIA/hdahstpztt1fvobc13st.png",
-    likes: ["64df3c064180b81adfe41d4b"],
+    likes: [],
     comments: [],
     createdAt: "2023-08-21T06:04:18.297Z",
     updatedAt: "2023-08-21T06:04:18.297Z",
@@ -311,79 +266,5 @@ export const posts = [
     __v: 0,
     image:
       "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874453/samples/bike.jpg",
-  },
-];
-
-export const postComments = [
-  {
-    _id: "64df43e04a4c0d47b536a02a",
-    userId: {
-      _id: "64df424b4a4c0d47b5369f65",
-      firstName: "User",
-      lastName: "One",
-    },
-    postId: "64df3ef86c2bd953c7b43193",
-    comment: "hahahah",
-    from: "User One",
-    likes: ["64df39704180b81adfe41d0b"],
-    replies: [],
-    createdAt: "2023-08-18T10:11:44.091Z",
-    updatedAt: "2023-08-21T03:37:03.927Z",
-    __v: 0,
-  },
-  {
-    _id: "64df41b14a4c0d47b5369f4d",
-    userId: {
-      _id: "64df39704180b81adfe41d0b",
-      firstName: "MTech",
-      lastName: "Solutions",
-      profileUrl:
-        "https://res.cloudinary.com/djs3wu5bg/image/upload/v1692299991/SOCIALMEDIA/fvws1unsqytcqketv78w.png",
-      location: "Mumbai, India",
-    },
-    postId: "64df3ef86c2bd953c7b43193",
-    comment: "i would like to have them in my house",
-    from: "MTech Solutions",
-    likes: ["64df39704180b81adfe41d0b"],
-    replies: [],
-    createdAt: "2023-08-18T10:02:25.492Z",
-    updatedAt: "2023-08-21T03:27:57.602Z",
-    __v: 0,
-  },
-  {
-    _id: "64df41304a4c0d47b5369f0d",
-    userId: {
-      _id: "64df3aec4180b81adfe41d32",
-      firstName: "Akwasi",
-      lastName: "Asante",
-      profileUrl:
-        "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874470/cld-sample.jpg",
-    },
-    postId: "64df3ef86c2bd953c7b43193",
-    comment: "This dogs are too serious!",
-    from: "Akwasi Asante",
-    likes: ["64df39704180b81adfe41d0b"],
-    replies: [
-      {
-        userId: {
-          _id: "64df39704180b81adfe41d0b",
-          firstName: "MTech",
-          lastName: "Solutions",
-          profileUrl:
-            "https://res.cloudinary.com/djs3wu5bg/image/upload/v1692299991/SOCIALMEDIA/fvws1unsqytcqketv78w.png",
-          location: "Mumbai, India",
-        },
-        from: "MTech Solutions",
-        replyAt: "Akwasi Asante",
-        comment: "Not easy, hahahah",
-        created_At: "2023-08-18T10:01:08.771Z",
-        updated_At: "2023-08-18T09:56:38.344Z",
-        likes: [],
-        _id: "64df41644a4c0d47b5369f24",
-      },
-    ],
-    createdAt: "2023-08-18T10:00:16.352Z",
-    updatedAt: "2023-08-18T10:01:14.090Z",
-    __v: 1,
   },
 ];

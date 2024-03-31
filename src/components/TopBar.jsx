@@ -39,7 +39,7 @@ const TopBar = () => {
           <TbSocial />
         </div>
         <span className='text-xl md:text-2xl text-[#065ad8] font-semibold'>
-          ShareFun
+          Interactify
         </span>
       </Link>
       <form
@@ -48,13 +48,13 @@ const TopBar = () => {
       >
         <TextInput
           placeholder='Search...'
-          styles='w-[18rem] lg:w-[38rem]  rounded-l-full py-3 mr-8'
+          styles='w-[18rem] lg:w-[38rem]  rounded-l-full py-3 mr-2'
           register={register("search")}
         />
         <CustomButton
           title='Search'
           type='submit'
-          containerStyles='bg-[#0444a4] text-white px-6 py-2.5 mt-2 rounded-r-full mr-16'
+          containerStyles='bg-[#0444a4] text-white px-6 py-2.5 mt-2 rounded-r-full '
         />
       </form>
       {/* ICONS */}
